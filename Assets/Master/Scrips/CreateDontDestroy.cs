@@ -10,12 +10,15 @@ public enum Gamestate
 
 public class CreateDontDestroy : MonoBehaviour
 {
-    GameObject logic;
-    static CreateDontDestroy instance;
+
+    private GameObject logic;
+    private static CreateDontDestroy instance;
+
     public static Gamestate CurrentGamestate;
+    public static bool isNewGame = true;
 
 
-    void Awake()
+    private void Awake()
     {
         logic = this.gameObject;
         if (instance != null)
@@ -36,7 +39,7 @@ public class CreateDontDestroy : MonoBehaviour
     }
 
 
-    public void AudioManager()
+    private void AudioManager()
     {
         if (CurrentGamestate == Gamestate.mainMenu)
         {
@@ -46,6 +49,15 @@ public class CreateDontDestroy : MonoBehaviour
         {
             //play background music
         }
+    }
+
+    public void NewGame()
+    {
+        Malte.LoadNewGame();
+    }
+    public void LoadGame()
+    {
+        Malte.LoadGame();
     }
 
 }

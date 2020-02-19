@@ -1,17 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Malte : MonoBehaviour
+public class Malte
 {
+    private static string path;
 
-	void Start ()
+
+    public static void LoadNewGame()
     {
-		
-	}
-	
-	void Update ()
+        SceneManager.LoadScene("Ingame");
+    }
+
+    public static void LoadGame()
     {
-		
-	}
+        CreateDontDestroy.isNewGame = false;
+        SceneManager.LoadScene("Ingame");
+    }
+
 }
