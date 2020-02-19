@@ -11,14 +11,17 @@ public enum Gamestate
 public class CreateDontDestroy : MonoBehaviour
 {
 
+
     private GameObject logic;
     private static CreateDontDestroy instance;
-
+    
     public static Gamestate CurrentGamestate;
     public static bool isNewGame = true;
 
 
+
     private void Awake()
+
     {
         logic = this.gameObject;
         if (instance != null)
