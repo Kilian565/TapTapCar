@@ -63,4 +63,24 @@ public class CreateDontDestroy : MonoBehaviour
         Malte.LoadGame();
     }
 
+
+}
+public class Variables
+{
+
+    //FUCKING VARIABLEN STEHEN
+    public static float resScraps;
+    public static float resElectronics;
+    public static float resPlastics;
+
+    public static int partEngines;
+    public static int partFrames;
+    public static int partTires;
+
+    public static int playerLevel;
+    public static float playerMoney;
+    public static float playerExperience;
+
+    public static float clickMultiplier;
+    //FUCKING VARIABLEN STEHEN
 }
