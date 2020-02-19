@@ -1,16 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Killian : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+public class Killian
+{
+
+    public static void ScrapyardClick()
+    {
+        Variablen.resScraps = Variablen.resScraps * Variablen.clickMultiplier;
+
+        if (Random.Range(0, 101) > 25)
+        {
+            Variablen.resPlastic = Variablen.resPlastic * Variablen.clickMultiplier;
+        }
+
+        if (Random.Range(0, 101) > 50)
+        {
+            Variablen.resElectronics = Variablen.resElectronics * Variablen.clickMultiplier;
+        }
+
+    }
 }
