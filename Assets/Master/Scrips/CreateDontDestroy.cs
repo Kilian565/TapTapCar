@@ -1,10 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-
-
-
 
 public enum Gamestate
 {
@@ -12,28 +8,17 @@ public enum Gamestate
     ingame
 }
 
-public class CreateDontDestroy : MonoBehaviour 
+public class CreateDontDestroy : MonoBehaviour
 {
-<<<<<<< HEAD
 
     private GameObject logic;
     private static CreateDontDestroy instance;
 
-=======
-   
-    GameObject logic;
-    static CreateDontDestroy instance;
->>>>>>> master
     public static Gamestate CurrentGamestate;
     public static bool isNewGame = true;
 
 
-<<<<<<< HEAD
     private void Awake()
-=======
-
-    void Awake()
->>>>>>> master
     {
         logic = this.gameObject;
         if (instance != null)
@@ -50,9 +35,7 @@ public class CreateDontDestroy : MonoBehaviour
 
     private void Start()
     {
-        
         CurrentGamestate = Gamestate.mainMenu;
-        
     }
 
 
@@ -77,26 +60,4 @@ public class CreateDontDestroy : MonoBehaviour
         Malte.LoadGame();
     }
 
-}
-public class Variablen
-{
-
-    //Ressource Variables
-    public static float money;
-    public static float experience;
-
-
-    public static float resScraps;
-    public static float resElectronics;
-    public static float resPlastic;
-
-    public static int partEngines;
-    public static int partTires;
-    public static int partFrames;
-
-    //public static int partTurbo;
-
-    //Ressource Variables
-
-    public static float clickMultiplier;
 }
