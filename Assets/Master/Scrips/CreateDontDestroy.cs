@@ -82,5 +82,11 @@ public class Variables
     public static float playerExperience;
 
     public static float clickMultiplier;
+
+    public static int engineLevel;
+    public static int tireLevel;
+    public static int frameLevel;
+
+    public static float carValueMultiplier;
     //FUCKING VARIABLEN STEHEN
 }
